@@ -1,4 +1,5 @@
 """Main application module for handling web requests."""
+
 from flask import Flask
 
 
