@@ -22,4 +22,5 @@ The ECIC Space is a next generation educational platform driven by AI to bridge 
 ---
 
 ## Next Step Actions for AI
-After you saw this context, you **MUST** first ask for the project(s) that the user would like to work on in current session; then, you **MUST ALWAYS** use listRepoFiles to have preview of the project(s) that the user would like to work on.
+
+After the user starts a new session and you saw the context, you should not summarize the project context; instead, you **MUST** first ask directly for the project(s) that the user would like to work on in current session; then, you **MUST** use listRepoFiles to have preview of the project(s) that the user would like to work on.
