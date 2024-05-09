@@ -6,7 +6,7 @@ def create_app():
     """Create and configure an instance of the Flask application."""
     web_app = Flask(__name__)
     web_app.config.from_mapping(
-        SECRET_KEY='your_secret_key',
+        SECRET_KEY='',
         DEBUG=False,  # Disable debug mode in production
         SQLALCHEMY_DATABASE_URI='sqlite:///your_database.db',
     )
