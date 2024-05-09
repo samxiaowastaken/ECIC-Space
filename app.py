@@ -1,12 +1,18 @@
-from flask import Flask, render_template
+"""Main application module for handling web requests."""
+from flask import Flask
 
-app = Flask(__name__)
 
-
-@app.route('/')
-def index():
-    return render_template('index.html', title='ECIC 学习平台')
+def create_app():
+    """Create and configure an instance of the Flask application."""
+    web_app = Flask(__name__)
+    web_app.config.from_mapping(
+        SECRET_KEY='your_secret_key',
+        DEBUG=False,  # Disable debug mode in production
+        SQLALCHEMY_DATABASE_URI='sqlite:///your_database.db',
+    )
+    return web_app
 
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app = create_app()
+    app.run(debug=True)  # Ensure debug is set to False in production
