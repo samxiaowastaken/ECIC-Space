@@ -1,5 +1,11 @@
 # Next-Generation Teacher-Student Platform
 
+<div align="center">
+  
+[**中文简体**](./README.md)
+
+</div>
+
 ## Introduction
 This project aims to develop a next-generation platform for teachers and students, integrating AI to enhance accessibility and efficiency in education. The core mission is to bridge the information gap between students and teachers, and to optimize campus efficiency using data-driven insights.
 
