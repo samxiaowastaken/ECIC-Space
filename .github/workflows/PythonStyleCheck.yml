@@ -28,6 +28,6 @@ jobs:
           pip install wemake-python-styleguide
           if [ -f requirements.txt ]; then pip install -r requirements.txt; fi
 
-      - name: Run wemake-python-styleguide
+      - name: Run wemake-python-styleguide on Python files
         run: |
-          flake8 .
+          find . -name "*.py" | xargs flake8
