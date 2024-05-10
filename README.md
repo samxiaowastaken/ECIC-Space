@@ -2,7 +2,7 @@
 
 <div align="center">
   
-[**中文简体**](./README.md)
+[**中文简体**](./README_zh.md)
 
 </div>
 
